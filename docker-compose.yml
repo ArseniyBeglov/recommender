@@ -1,0 +1,9 @@
+version: '3'
+services:
+  recommender:
+    build: .
+    container_name: recommender_service
+    ports:
+      - 5001:5001
+    volumes:
+      - .:/recommender
